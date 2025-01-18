@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "utis+ewn8OA=",
+  "success": true,
+  "projectFilePath": "D:\\fireanmeng\\AoH3EC\\AoH3EventMaker\\AoH3EventMaker.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NINGMEI\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.11\\microsoft.net.illink.tasks.8.0.11.nupkg.sha512",
+    "C:\\Users\\NINGMEI\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.11\\microsoft.netcore.app.runtime.win-x86.8.0.11.nupkg.sha512",
+    "C:\\Users\\NINGMEI\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.11\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.11.nupkg.sha512",
+    "C:\\Users\\NINGMEI\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.11\\microsoft.aspnetcore.app.runtime.win-x86.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

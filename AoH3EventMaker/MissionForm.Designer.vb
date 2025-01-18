@@ -36,7 +36,7 @@ Partial Class MissionForm
         Button_Done.Name = "Button_Done"
         Button_Done.Size = New Size(556, 23)
         Button_Done.TabIndex = 0
-        Button_Done.Text = "Done"
+        Button_Done.Text = "完成"
         Button_Done.UseVisualStyleBackColor = True
         ' 
         ' Label_MissionDesc
@@ -46,7 +46,7 @@ Partial Class MissionForm
         Label_MissionDesc.Name = "Label_MissionDesc"
         Label_MissionDesc.Size = New Size(67, 15)
         Label_MissionDesc.TabIndex = 1
-        Label_MissionDesc.Text = "Description"
+        Label_MissionDesc.Text = "描述"
         ' 
         ' Textbox_MissionDesc
         ' 
@@ -64,7 +64,7 @@ Partial Class MissionForm
         Label_Image.Name = "Label_Image"
         Label_Image.Size = New Size(40, 15)
         Label_Image.TabIndex = 3
-        Label_Image.Text = "Image"
+        Label_Image.Text = "图片"
         ' 
         ' Textbox_Image
         ' 
@@ -88,7 +88,7 @@ Partial Class MissionForm
         MaximizeBox = False
         MinimizeBox = False
         Name = "MissionForm"
-        Text = "Missions"
+        Text = "任务"
         ResumeLayout(False)
         PerformLayout()
     End Sub

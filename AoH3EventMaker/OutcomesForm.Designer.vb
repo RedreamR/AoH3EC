@@ -51,7 +51,7 @@ Partial Class OutcomesForm
         Groupbox_Input3.Size = New Size(514, 100)
         Groupbox_Input3.TabIndex = 16
         Groupbox_Input3.TabStop = False
-        Groupbox_Input3.Text = "Argument 3"
+        Groupbox_Input3.Text = "参数 3"
         ' 
         ' Richtextbox_Desc3
         ' 
@@ -78,7 +78,7 @@ Partial Class OutcomesForm
         Groupbox_Input2.Size = New Size(514, 100)
         Groupbox_Input2.TabIndex = 15
         Groupbox_Input2.TabStop = False
-        Groupbox_Input2.Text = "Argument 2"
+        Groupbox_Input2.Text = "参数 2"
         ' 
         ' Richtextbox_Desc2
         ' 
@@ -105,7 +105,7 @@ Partial Class OutcomesForm
         Groupbox_Input1.Size = New Size(514, 100)
         Groupbox_Input1.TabIndex = 14
         Groupbox_Input1.TabStop = False
-        Groupbox_Input1.Text = "Argument 1"
+        Groupbox_Input1.Text = "参数 1"
         ' 
         ' Richtextbox_Desc1
         ' 
@@ -127,7 +127,7 @@ Partial Class OutcomesForm
         ' 
         Combobox_MainSelection.DropDownStyle = ComboBoxStyle.DropDownList
         Combobox_MainSelection.FormattingEnabled = True
-        Combobox_MainSelection.Items.AddRange(New Object() {"Play Music =", "Gold +", "Gold Monthly Income +", "Legacy +", "Legacy Monthly +", "Player =", "Research +", "Advantage Points +", "Manpower +", "Inflation +", "AI Agression =", "Argressive Expansion =", "Capital =", "War =", "Alliance =", "Non Agression Pact =", "Military Access =", "Guarantee =", "Defensive Pact =", "Truce =", "Goverment =", "Religion =", "Annex =", "Controlled Annex =", "Full Annex =", "Full Annex By =", "Puppet =", "Set Tag =", "Event =", "Add Random General =", "Add General =", "Add Random Advisor =", "Add Advisor =", "Add Ruler =", "Province Economy =", "Province Economy Capital =", "Province Economy All =", "Province Economy ID =", "Province Tax Efficency =", "Province Tax Efficency Capital =", "Province Tax Efficency All =", "Province Tax Efficency ID =", "Province Manpower =", "Province Manpower Capital =", "Province Manpower All =", "Province Manpower ID =", "Province Growth Rate =", "Province Growth Rate Capital =", "Province Growth Rate All =", "Province Growth Rate ID =", "Province Population =", "Province Population Capital =", "Province Population All =", "Province Population ID =", "Province Religion =", "Province Religion Capital =", "Province Religion All =", "Province Religion ID =", "Province Devastation =", "Province Devastation Capital =", "Province Devastation All =", "Province Devastation ID =", "Province Unrest =", "Province Unrest Capital =", "Province Unrest All =", "Province Unrest ID =", "Province Infrastructure =", "Province Infrastructure Capital =", "Province Infrastructure All =", "Province Infrastructure ID =", "Add Core =", "Remove Core =", "Add Army =", "Add Variable =", "Bonus Duration =", "Bonus Monthly Income =", "Bonus Monthly Legacy =", "Bonus Monthly Legacy % =", "Bonus Maximum Gold =", "Bonus Tax Efficency =", "Bonus Growth Rate =", "Bonus Province Maintenance =", "Bonus Buildings Maintenance Cost =", "Bonus Production Efficency =", "Bonus Income Production =", "Bonus Income Taxation =", "Bonus Income Economy =", "Bonus Corruption =", "Bonus Inflation =", "Bonus Research =", "Bonus Research Points =", "Bonus Max Manpower =", "Bonus Max Manpower % =", "Bonus Manpower Recovery Speed =", "Bonus Reinforcement Speed =", "Bonus Army Morale Recovery =", "Bonus Army Maintenance =", "Bonus Recruitment Time =", "Bonus Recruit Cost =", "Bonus Recruit Cost First Line =", "Bonus Recruit Cost Second Line =", "Bonus Generals ATK =", "Bonus Generals DEF =", "Bonus Units ATK =", "Bonus Units DEF =", "Bonus Regiments Limit =", "Bonus Battle Width =", "Bonus Discipline =", "Bonus Siege Effectiveness =", "Bonus Max Morale =", "Bonus Army Speed =", "Bonus Manpower Recovery From Disbanding =", "Bonus War Score =", "Bonus Construction Cost =", "Bonus Administration Building Cost =", "Bonus Military Building Cost =", "Bonus Economy Building Cost =", "Bonus Construction Time =", "Bonus Invest Cost =", "Bonus Manpower Cost =", "Bonus Tax Efficency Cost =", "Bonus Infrastructure Cost =", "Bonus Growth Rate Cost =", "Bonus Diplomacy Points =", "Bonus Relations Modifier =", "Bonus Vassals Income =", "Bonus Agressive Expansion =", "Bonus Core Cost =", "Bonus Religion Cost =", "Bonus Revolution Risk =", "Bonus Loan Interest =", "Bonus Loan Limit =", "Bonus Characters Age =", "Bonus Advisors Cost =", "Bonus Advisors Max Levels =", "Bonus General Cost =", "Bonus Disease Death Rate =", "Join HRE First Tier =", "Join HRE Second Tier =", "Leave HRE =", "Kill Ruler =", "Kill Advisor =", "Promote Advisor =", "Military Academy +", "Military Academy General +", "Capital City +", "Court +", "Reactor +", "Explode =", "Price +", "Price -", "Price Group +", "Price Group -"})
+        Combobox_MainSelection.Items.AddRange(New Object() {"播放音乐", "增加黄金", "增加每月黄金收入", "遗产 +", "每月遗产增加 +", "玩家游玩文明 =", "研究 +", "优势点数 +", "人力 +", "通货膨胀 +", "AI侵略度 =", "侵略扩张 =", "首都", "宣战", "结成同盟", "签订互不侵犯条约", "添加军事通行权", "保证独立", "签订防御条约", "新增和约", "改变政体", "改变宗教", "吞并", "吞并，若省份被某文明控制", "吞并文明", "被完全吞并", "新增附庸", "设置文明Tag", "运行事件", "添加随机将军", "新增将军", "新增随机顾问", "新增顾问", "更换统治者", "设置随机省份经济", "设置首都经济", "设置文明经济", "设置省份经济", "设置随机省份的税收率", "设置首都的税收率", "设置文明的税收率", "设置省份的税收率", "设置随机省份的人力", "省份 人力 首都", "省份 人力 全部=", "省份 人力 ID =", "省份 增长率 =", "省份 增长率 首都", "省份 增长率 全部=", "省份 增长率 ID =", "省份 人口 =", "省份 人口 首都", "省份 人口 全部=", "省份 人口 ID =", "省份 改变宗教", "省份 Religion 首都", "省份 Religion 全部=", "省份 Religion ID =", "省份 荒废度 =", "省份 荒废度 首都", "省份 荒废度 全部=", "省份 荒废度 ID =", "省份 Unrest =", "省份 Unrest 首都", "省份 Unrest 全部=", "省份 Unrest ID =", "省份 基建 =", "省份 基建 首都", "省份 基建 全部=", "省份 基建 ID =", "添加核心", "移除核心", "新建军队", "添加变量", "增益 有效期 =", "增益 Monthly Income =", "增益 Monthly Legacy =", "增益 Monthly Legacy % =", "增益 Maximum Gold =", "增益 税收率 =", "增益 增长率 =", "增益 省份 Maintenance =", "增益 Buildings 维护费用  =", "增益 Production Efficency =", "增益 Income Production =", "增益 Income Taxation =", "增益 Income 经济 =", "增益 Corruption =", "增益 Inflation =", "增益 Research =", "增益 Research Points =", "增益 Max 人力 =", "增益 Max 人力 % =", "增益 人力 Recovery Speed =", "增益 Reinforcement Speed =", "增益 Army Morale Recovery =", "增益 Army Maintenance =", "增益 Recruitment Time =", "增益 Recruit Cost =", "增益 Recruit Cost First Line =", "增益 Recruit Cost Second Line =", "增益 Generals 攻击 =", "增益 Generals 防御 =", "增益 Units 攻击 =", "增益 Units 防御 =", "增益 Regiments Limit =", "增益 Battle Width =", "增益 Discipline =", "增益 Siege Effectiveness =", "增益 Max Morale =", "增益 Army Speed =", "增益 人力 Recovery From Disbanding =", "增益 War Score =", "增益 Construction Cost =", "增益 Administration Building Cost =", "增益 Military Building Cost =", "增益 经济 Building Cost =", "增益 Construction Time =", "增益 Invest Cost =", "增益 人力 Cost =", "增益 税收率 Cost =", "增益 基建 Cost =", "增益 增长率 Cost =", "增益 Diplomacy Points =", "增益 Relations Modifier =", "增益 Vassals Income =", "增益 Agressive Expansion =", "增益 Core Cost =", "增益 Religion Cost =", "增益 Revolution Risk =", "增益 Loan Interest =", "增益 Loan Limit =", "增益 Characters Age =", "增益 Advisors Cost =", "增益 Advisors Max Levels =", "增益 General Cost =", "增益 Disease Death Rate =", "Join HRE First Tier =", "Join HRE Second Tier =", "Leave HRE =", "Kill Ruler =", "Kill Advisor =", "Promote Advisor =", "Military Academy +", "Military Academy General +", "Capital City +", "Court +", "Reactor +", "Explode =", "Price +", "Price -", "Price Group +", "Price Group -"})
         Combobox_MainSelection.Location = New Point(274, 12)
         Combobox_MainSelection.Name = "Combobox_MainSelection"
         Combobox_MainSelection.Size = New Size(514, 23)
@@ -140,7 +140,7 @@ Partial Class OutcomesForm
         Button_Delete.Name = "Button_Delete"
         Button_Delete.Size = New Size(75, 23)
         Button_Delete.TabIndex = 12
-        Button_Delete.Text = "Delete"
+        Button_Delete.Text = "删除"
         Button_Delete.UseVisualStyleBackColor = True
         ' 
         ' Button_Add
@@ -149,7 +149,7 @@ Partial Class OutcomesForm
         Button_Add.Name = "Button_Add"
         Button_Add.Size = New Size(75, 23)
         Button_Add.TabIndex = 10
-        Button_Add.Text = "Add"
+        Button_Add.Text = "添加"
         Button_Add.UseVisualStyleBackColor = True
         ' 
         ' Listbox_MainList
@@ -168,7 +168,7 @@ Partial Class OutcomesForm
         Label_Name.Name = "Label_Name"
         Label_Name.Size = New Size(39, 15)
         Label_Name.TabIndex = 17
-        Label_Name.Text = "Name"
+        Label_Name.Text = "按钮名"
         ' 
         ' Textbox_Name
         ' 
@@ -195,7 +195,7 @@ Partial Class OutcomesForm
         MaximizeBox = False
         MinimizeBox = False
         Name = "OutcomesForm"
-        Text = "Outcomes"
+        Text = "决议"
         Groupbox_Input3.ResumeLayout(False)
         Groupbox_Input3.PerformLayout()
         Groupbox_Input2.ResumeLayout(False)

@@ -713,13 +713,13 @@ Public Class TriggersForm
                 TriggerDesc1 = "Number"
                 TriggerDesc2 = ""
                 TriggerDesc3 = ""
-            Case "Capital Infrastructure >"
+            Case "Capital 基建 >"
                 TriggerData = "civ_capital_infrastructure_over"
                 ArgsCount = 1
                 TriggerDesc1 = "Number"
                 TriggerDesc2 = ""
                 TriggerDesc3 = ""
-            Case "Capital Infrastructure <"
+            Case "Capital 基建 <"
                 TriggerData = "civ_capital_infrastructure_below"
                 ArgsCount = 1
                 TriggerDesc1 = "Number"
@@ -1271,13 +1271,13 @@ Public Class TriggersForm
                 TriggerDesc1 = "ID"
                 TriggerDesc2 = "Number"
                 TriggerDesc3 = ""
-            Case "Province Infrastructure >"
+            Case "Province 基建 >"
                 TriggerData = "province_infrastructure_over"
                 ArgsCount = 2
                 TriggerDesc1 = "ID"
                 TriggerDesc2 = "Number"
                 TriggerDesc3 = ""
-            Case "Province Infrastructure <"
+            Case "Province 基建 <"
                 TriggerData = "province_infrastructure_below"
                 ArgsCount = 2
                 TriggerDesc1 = "ID"

@@ -56,6 +56,7 @@ Partial Class StartForm
         Button_Outcome_Add = New Button()
         Button_Outcome_Edit = New Button()
         Listbox_Outcomes = New ListBox()
+        ToolStripSplitButton1 = New ToolStripButton()
         MainToolbar.SuspendLayout()
         Groupbox_Information.SuspendLayout()
         Groupbox_Triggers.SuspendLayout()
@@ -64,7 +65,7 @@ Partial Class StartForm
         ' 
         ' MainToolbar
         ' 
-        MainToolbar.Items.AddRange(New ToolStripItem() {Button_File})
+        MainToolbar.Items.AddRange(New ToolStripItem() {Button_File, ToolStripSplitButton1})
         MainToolbar.Location = New Point(0, 0)
         MainToolbar.Name = "MainToolbar"
         MainToolbar.Size = New Size(984, 25)
@@ -77,32 +78,32 @@ Partial Class StartForm
         Button_File.DropDownItems.AddRange(New ToolStripItem() {Button_File_New, Button_File_Save, Button_File_Open})
         Button_File.ImageTransparentColor = Color.Magenta
         Button_File.Name = "Button_File"
-        Button_File.Size = New Size(38, 22)
-        Button_File.Text = "File"
+        Button_File.Size = New Size(45, 22)
+        Button_File.Text = "文件"
         ' 
         ' Button_File_New
         ' 
         Button_File_New.Name = "Button_File_New"
-        Button_File_New.Size = New Size(103, 22)
-        Button_File_New.Text = "New"
+        Button_File_New.Size = New Size(100, 22)
+        Button_File_New.Text = "新建"
         ' 
         ' Button_File_Save
         ' 
         Button_File_Save.Name = "Button_File_Save"
-        Button_File_Save.Size = New Size(103, 22)
-        Button_File_Save.Text = "Save"
+        Button_File_Save.Size = New Size(100, 22)
+        Button_File_Save.Text = "保存"
         ' 
         ' Button_File_Open
         ' 
         Button_File_Open.Name = "Button_File_Open"
-        Button_File_Open.Size = New Size(103, 22)
-        Button_File_Open.Text = "Open"
+        Button_File_Open.Size = New Size(100, 22)
+        Button_File_Open.Text = "打开"
         ' 
         ' MainTextbox
         ' 
-        MainTextbox.Location = New Point(12, 28)
+        MainTextbox.Location = New Point(12, 32)
         MainTextbox.Name = "MainTextbox"
-        MainTextbox.Size = New Size(467, 494)
+        MainTextbox.Size = New Size(467, 559)
         MainTextbox.TabIndex = 1
         MainTextbox.Text = ""
         ' 
@@ -117,16 +118,16 @@ Partial Class StartForm
         ' Label_Title
         ' 
         Label_Title.AutoSize = True
-        Label_Title.Font = New Font("Segoe UI", 15F)
-        Label_Title.Location = New Point(6, 47)
+        Label_Title.Font = New Font("Segoe UI", 15.0F)
+        Label_Title.Location = New Point(6, 53)
         Label_Title.Name = "Label_Title"
-        Label_Title.Size = New Size(49, 28)
+        Label_Title.Size = New Size(52, 28)
         Label_Title.TabIndex = 2
-        Label_Title.Text = "Title"
+        Label_Title.Text = "标题"
         ' 
         ' Textbox_Title
         ' 
-        Textbox_Title.Location = New Point(106, 52)
+        Textbox_Title.Location = New Point(106, 59)
         Textbox_Title.Name = "Textbox_Title"
         Textbox_Title.Size = New Size(377, 23)
         Textbox_Title.TabIndex = 2
@@ -134,8 +135,8 @@ Partial Class StartForm
         ' Label_ID
         ' 
         Label_ID.AutoSize = True
-        Label_ID.Font = New Font("Segoe UI", 15F)
-        Label_ID.Location = New Point(6, 19)
+        Label_ID.Font = New Font("Segoe UI", 15.0F)
+        Label_ID.Location = New Point(6, 22)
         Label_ID.Name = "Label_ID"
         Label_ID.Size = New Size(31, 28)
         Label_ID.TabIndex = 4
@@ -143,14 +144,14 @@ Partial Class StartForm
         ' 
         ' Textbox_ID
         ' 
-        Textbox_ID.Location = New Point(106, 24)
+        Textbox_ID.Location = New Point(106, 27)
         Textbox_ID.Name = "Textbox_ID"
         Textbox_ID.Size = New Size(377, 23)
         Textbox_ID.TabIndex = 1
         ' 
         ' Textbox_Desc
         ' 
-        Textbox_Desc.Location = New Point(106, 81)
+        Textbox_Desc.Location = New Point(106, 92)
         Textbox_Desc.Name = "Textbox_Desc"
         Textbox_Desc.Size = New Size(377, 23)
         Textbox_Desc.TabIndex = 3
@@ -158,56 +159,56 @@ Partial Class StartForm
         ' Label_Desc
         ' 
         Label_Desc.AutoSize = True
-        Label_Desc.Font = New Font("Segoe UI", 15F)
-        Label_Desc.Location = New Point(6, 75)
+        Label_Desc.Font = New Font("Segoe UI", 15.0F)
+        Label_Desc.Location = New Point(6, 85)
         Label_Desc.Name = "Label_Desc"
-        Label_Desc.Size = New Size(53, 28)
+        Label_Desc.Size = New Size(52, 28)
         Label_Desc.TabIndex = 6
-        Label_Desc.Text = "Desc"
+        Label_Desc.Text = "描述"
         ' 
         ' Checkbox_Mission
         ' 
         Checkbox_Mission.AutoSize = True
-        Checkbox_Mission.Location = New Point(6, 145)
+        Checkbox_Mission.Location = New Point(6, 164)
         Checkbox_Mission.Name = "Checkbox_Mission"
-        Checkbox_Mission.Size = New Size(72, 19)
+        Checkbox_Mission.Size = New Size(87, 21)
         Checkbox_Mission.TabIndex = 4
-        Checkbox_Mission.Text = "Mission?"
+        Checkbox_Mission.Text = "任务事件？"
         Checkbox_Mission.UseVisualStyleBackColor = True
         ' 
         ' Button_Mission
         ' 
         Button_Mission.Enabled = False
-        Button_Mission.Location = New Point(106, 142)
+        Button_Mission.Location = New Point(106, 161)
         Button_Mission.Name = "Button_Mission"
-        Button_Mission.Size = New Size(221, 23)
+        Button_Mission.Size = New Size(221, 26)
         Button_Mission.TabIndex = 5
-        Button_Mission.Text = "Modify Mission"
+        Button_Mission.Text = "修改任务内容"
         Button_Mission.UseVisualStyleBackColor = True
         ' 
         ' Checkbox_Once
         ' 
         Checkbox_Once.AutoSize = True
-        Checkbox_Once.Location = New Point(349, 146)
+        Checkbox_Once.Location = New Point(349, 165)
         Checkbox_Once.Name = "Checkbox_Once"
-        Checkbox_Once.Size = New Size(59, 19)
+        Checkbox_Once.Size = New Size(75, 21)
         Checkbox_Once.TabIndex = 6
-        Checkbox_Once.Text = "Once?"
+        Checkbox_Once.Text = "仅一次？"
         Checkbox_Once.UseVisualStyleBackColor = True
         ' 
         ' Label_Image
         ' 
         Label_Image.AutoSize = True
-        Label_Image.Font = New Font("Segoe UI", 15F)
-        Label_Image.Location = New Point(6, 108)
+        Label_Image.Font = New Font("Segoe UI", 15.0F)
+        Label_Image.Location = New Point(6, 122)
         Label_Image.Name = "Label_Image"
-        Label_Image.Size = New Size(66, 28)
+        Label_Image.Size = New Size(52, 28)
         Label_Image.TabIndex = 11
-        Label_Image.Text = "Image"
+        Label_Image.Text = "图片"
         ' 
         ' Textbox_Image
         ' 
-        Textbox_Image.Location = New Point(106, 113)
+        Textbox_Image.Location = New Point(106, 128)
         Textbox_Image.Name = "Textbox_Image"
         Textbox_Image.Size = New Size(377, 23)
         Textbox_Image.TabIndex = 4
@@ -226,21 +227,21 @@ Partial Class StartForm
         Groupbox_Information.Controls.Add(Textbox_ID)
         Groupbox_Information.Controls.Add(Label_Desc)
         Groupbox_Information.Controls.Add(Textbox_Desc)
-        Groupbox_Information.Location = New Point(485, 28)
+        Groupbox_Information.Location = New Point(485, 32)
         Groupbox_Information.Name = "Groupbox_Information"
-        Groupbox_Information.Size = New Size(487, 174)
+        Groupbox_Information.Size = New Size(487, 197)
         Groupbox_Information.TabIndex = 13
         Groupbox_Information.TabStop = False
-        Groupbox_Information.Text = "Information"
+        Groupbox_Information.Text = "信息"
         ' 
         ' Checkbox_Popup
         ' 
         Checkbox_Popup.AutoSize = True
-        Checkbox_Popup.Location = New Point(414, 145)
+        Checkbox_Popup.Location = New Point(414, 164)
         Checkbox_Popup.Name = "Checkbox_Popup"
-        Checkbox_Popup.Size = New Size(67, 19)
+        Checkbox_Popup.Size = New Size(87, 21)
         Checkbox_Popup.TabIndex = 7
-        Checkbox_Popup.Text = "PopUp?"
+        Checkbox_Popup.Text = "自动弹出？"
         Checkbox_Popup.UseVisualStyleBackColor = True
         ' 
         ' Groupbox_Triggers
@@ -250,59 +251,59 @@ Partial Class StartForm
         Groupbox_Triggers.Controls.Add(Button_Trigger_Add)
         Groupbox_Triggers.Controls.Add(Button_Trigger_Edit)
         Groupbox_Triggers.Controls.Add(Listbox_Triggers)
-        Groupbox_Triggers.Location = New Point(485, 208)
+        Groupbox_Triggers.Location = New Point(485, 236)
         Groupbox_Triggers.Name = "Groupbox_Triggers"
-        Groupbox_Triggers.Size = New Size(483, 154)
+        Groupbox_Triggers.Size = New Size(483, 175)
         Groupbox_Triggers.TabIndex = 14
         Groupbox_Triggers.TabStop = False
-        Groupbox_Triggers.Text = "Triggers"
+        Groupbox_Triggers.Text = "触发器"
         ' 
         ' Combobox_TriggerType
         ' 
         Combobox_TriggerType.DropDownStyle = ComboBoxStyle.DropDownList
         Combobox_TriggerType.FormattingEnabled = True
-        Combobox_TriggerType.Items.AddRange(New Object() {"AND", "OR", "NOT"})
-        Combobox_TriggerType.Location = New Point(402, 80)
+        Combobox_TriggerType.Items.AddRange(New Object() {"和", "或", "非"})
+        Combobox_TriggerType.Location = New Point(402, 91)
         Combobox_TriggerType.Name = "Combobox_TriggerType"
-        Combobox_TriggerType.Size = New Size(75, 23)
+        Combobox_TriggerType.Size = New Size(75, 25)
         Combobox_TriggerType.TabIndex = 11
         ' 
         ' Button_Trigger_Delete
         ' 
         Button_Trigger_Delete.Enabled = False
-        Button_Trigger_Delete.Location = New Point(402, 123)
+        Button_Trigger_Delete.Location = New Point(402, 139)
         Button_Trigger_Delete.Name = "Button_Trigger_Delete"
-        Button_Trigger_Delete.Size = New Size(75, 23)
+        Button_Trigger_Delete.Size = New Size(75, 26)
         Button_Trigger_Delete.TabIndex = 12
-        Button_Trigger_Delete.Text = "Delete"
+        Button_Trigger_Delete.Text = "删除"
         Button_Trigger_Delete.UseVisualStyleBackColor = True
         ' 
         ' Button_Trigger_Add
         ' 
-        Button_Trigger_Add.Location = New Point(402, 51)
+        Button_Trigger_Add.Location = New Point(402, 58)
         Button_Trigger_Add.Name = "Button_Trigger_Add"
-        Button_Trigger_Add.Size = New Size(75, 23)
+        Button_Trigger_Add.Size = New Size(75, 26)
         Button_Trigger_Add.TabIndex = 10
-        Button_Trigger_Add.Text = "Add"
+        Button_Trigger_Add.Text = "添加"
         Button_Trigger_Add.UseVisualStyleBackColor = True
         ' 
         ' Button_Trigger_Edit
         ' 
         Button_Trigger_Edit.Enabled = False
-        Button_Trigger_Edit.Location = New Point(402, 22)
+        Button_Trigger_Edit.Location = New Point(402, 25)
         Button_Trigger_Edit.Name = "Button_Trigger_Edit"
-        Button_Trigger_Edit.Size = New Size(75, 23)
+        Button_Trigger_Edit.Size = New Size(75, 26)
         Button_Trigger_Edit.TabIndex = 9
-        Button_Trigger_Edit.Text = "Edit"
+        Button_Trigger_Edit.Text = "编辑"
         Button_Trigger_Edit.UseVisualStyleBackColor = True
         ' 
         ' Listbox_Triggers
         ' 
         Listbox_Triggers.FormattingEnabled = True
-        Listbox_Triggers.ItemHeight = 15
-        Listbox_Triggers.Location = New Point(6, 22)
+        Listbox_Triggers.ItemHeight = 17
+        Listbox_Triggers.Location = New Point(6, 25)
         Listbox_Triggers.Name = "Listbox_Triggers"
-        Listbox_Triggers.Size = New Size(382, 124)
+        Listbox_Triggers.Size = New Size(382, 140)
         Listbox_Triggers.TabIndex = 8
         ' 
         ' Groupbox_Outcomes
@@ -312,16 +313,16 @@ Partial Class StartForm
         Groupbox_Outcomes.Controls.Add(Button_Outcome_Add)
         Groupbox_Outcomes.Controls.Add(Button_Outcome_Edit)
         Groupbox_Outcomes.Controls.Add(Listbox_Outcomes)
-        Groupbox_Outcomes.Location = New Point(485, 368)
+        Groupbox_Outcomes.Location = New Point(485, 417)
         Groupbox_Outcomes.Name = "Groupbox_Outcomes"
-        Groupbox_Outcomes.Size = New Size(483, 154)
+        Groupbox_Outcomes.Size = New Size(483, 175)
         Groupbox_Outcomes.TabIndex = 15
         Groupbox_Outcomes.TabStop = False
-        Groupbox_Outcomes.Text = "Outcomes"
+        Groupbox_Outcomes.Text = "决议"
         ' 
         ' Textbox_OutcomeAI
         ' 
-        Textbox_OutcomeAI.Location = New Point(405, 80)
+        Textbox_OutcomeAI.Location = New Point(405, 91)
         Textbox_OutcomeAI.Name = "Textbox_OutcomeAI"
         Textbox_OutcomeAI.PlaceholderText = "AI"
         Textbox_OutcomeAI.Size = New Size(72, 23)
@@ -331,46 +332,54 @@ Partial Class StartForm
         ' Button_Outcome_Delete
         ' 
         Button_Outcome_Delete.Enabled = False
-        Button_Outcome_Delete.Location = New Point(402, 123)
+        Button_Outcome_Delete.Location = New Point(402, 139)
         Button_Outcome_Delete.Name = "Button_Outcome_Delete"
-        Button_Outcome_Delete.Size = New Size(75, 23)
+        Button_Outcome_Delete.Size = New Size(75, 26)
         Button_Outcome_Delete.TabIndex = 17
-        Button_Outcome_Delete.Text = "Delete"
+        Button_Outcome_Delete.Text = "删除"
         Button_Outcome_Delete.UseVisualStyleBackColor = True
         ' 
         ' Button_Outcome_Add
         ' 
-        Button_Outcome_Add.Location = New Point(402, 51)
+        Button_Outcome_Add.Location = New Point(402, 58)
         Button_Outcome_Add.Name = "Button_Outcome_Add"
-        Button_Outcome_Add.Size = New Size(75, 23)
+        Button_Outcome_Add.Size = New Size(75, 26)
         Button_Outcome_Add.TabIndex = 15
-        Button_Outcome_Add.Text = "Add"
+        Button_Outcome_Add.Text = "添加"
         Button_Outcome_Add.UseVisualStyleBackColor = True
         ' 
         ' Button_Outcome_Edit
         ' 
         Button_Outcome_Edit.Enabled = False
-        Button_Outcome_Edit.Location = New Point(402, 22)
+        Button_Outcome_Edit.Location = New Point(402, 25)
         Button_Outcome_Edit.Name = "Button_Outcome_Edit"
-        Button_Outcome_Edit.Size = New Size(75, 23)
+        Button_Outcome_Edit.Size = New Size(75, 26)
         Button_Outcome_Edit.TabIndex = 14
-        Button_Outcome_Edit.Text = "Edit"
+        Button_Outcome_Edit.Text = "编辑"
         Button_Outcome_Edit.UseVisualStyleBackColor = True
         ' 
         ' Listbox_Outcomes
         ' 
         Listbox_Outcomes.FormattingEnabled = True
-        Listbox_Outcomes.ItemHeight = 15
-        Listbox_Outcomes.Location = New Point(6, 22)
+        Listbox_Outcomes.ItemHeight = 17
+        Listbox_Outcomes.Location = New Point(6, 25)
         Listbox_Outcomes.Name = "Listbox_Outcomes"
-        Listbox_Outcomes.Size = New Size(382, 124)
+        Listbox_Outcomes.Size = New Size(382, 140)
         Listbox_Outcomes.TabIndex = 13
+        ' 
+        ' ToolStripSplitButton1
+        ' 
+        ToolStripSplitButton1.DisplayStyle = ToolStripItemDisplayStyle.Text
+        ToolStripSplitButton1.ImageTransparentColor = Color.Magenta
+        ToolStripSplitButton1.Name = "ToolStripSplitButton1"
+        ToolStripSplitButton1.Size = New Size(23, 22)
+        ToolStripSplitButton1.Text = "关于"
         ' 
         ' StartForm
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 17.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(984, 527)
+        ClientSize = New Size(984, 597)
         Controls.Add(Groupbox_Outcomes)
         Controls.Add(Groupbox_Triggers)
         Controls.Add(Groupbox_Information)
@@ -380,7 +389,7 @@ Partial Class StartForm
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         Name = "StartForm"
-        Text = "Age of History 3 - Event Creator"
+        Text = "历史时代3 - 事件创建器"
         MainToolbar.ResumeLayout(False)
         MainToolbar.PerformLayout()
         Groupbox_Information.ResumeLayout(False)
@@ -427,5 +436,6 @@ Partial Class StartForm
     Friend WithEvents Button_Outcome_Edit As Button
     Friend WithEvents Listbox_Outcomes As ListBox
     Friend WithEvents Textbox_OutcomeAI As TextBox
+    Friend WithEvents ToolStripSplitButton1 As ToolStripButton
 
 End Class

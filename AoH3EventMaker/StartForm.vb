@@ -53,8 +53,13 @@ popUp=true")
         Else
             Me.Checkbox_Mission.Checked = False
         End If
-        MissionForm.Textbox_Image.Text = MainTextbox.Lines(Find("mission_image")).Split(New Char() {"="})(1).Split(New Char() {"."})(0)
-        MissionForm.Textbox_MissionDesc.Text = MainTextbox.Lines(Find("mission_desc")).Split(New Char() {"="})(1)
+        If Me.Checkbox_Mission.Checked = True Then
+            MissionForm.Textbox_Image.Text = MainTextbox.Lines(Find("mission_image")).Split(New Char() {"="})(1).Split(New Char() {"."})(0)
+            MissionForm.Textbox_MissionDesc.Text = MainTextbox.Lines(Find("mission_desc")).Split(New Char() {"="})(1)
+        Else
+            MissionForm.Textbox_Image.Text = ""
+            MissionForm.Textbox_MissionDesc.Text = ""
+        End If
         If MainTextbox.Lines(Find("only_once")).Split(New Char() {"="})(1) = "true" Then
             Me.Checkbox_Once.Checked = True
         Else
@@ -116,7 +121,7 @@ popUp=true")
     End Sub
 
     Private Sub Button_File_New_Click(sender As Object, e As EventArgs) Handles Button_File_New.Click
-        If MsgBox("Are you sure?", 4, "New Event") = MsgBoxResult.Yes Then
+        If MsgBox("你确定要新建一个事件吗？", 4, "新事件") = MsgBoxResult.Yes Then
             Me.MainTextbox.Text = DefaultEvent
             Reload()
         End If
@@ -220,6 +225,14 @@ popUp=true")
 
     Private Sub Button_Trigger_Add_Click(sender As Object, e As EventArgs) Handles Button_Trigger_Add.Click
         Dim Selected As String
+        Dim RealOption As String
+        If Me.Combobox_TriggerType.SelectedItem = "和" Then
+            RealOption = "and"
+        ElseIf Me.Combobox_TriggerType.SelectedItem = "或" Then
+            RealOption = "or"
+        ElseIf Me.Combobox_TriggerType.SelectedItem = "非" Then
+            RealOption = "not"
+        End If
         If Me.Listbox_Triggers.SelectedIndex = -1 Then
             Selected = "AND_12_12"
         Else
@@ -231,12 +244,12 @@ popUp=true")
             Lines.Add("")
         Next
         If Selected = "AND_12_12" Then
-            Lines.Insert(Endline + 1, "trigger_" + LCase(Me.Combobox_TriggerType.SelectedItem))
-            Lines.Insert(Endline + 2, "trigger_" + LCase(Me.Combobox_TriggerType.SelectedItem) + "_end")
+            Lines.Insert(Endline + 1, "trigger_" + RealOption)
+            Lines.Insert(Endline + 2, "trigger_" + RealOption + "_end")
             Lines.Insert(Endline + 3, "")
         Else
-            Lines.Insert(Endline + 2, "trigger_" + LCase(Me.Combobox_TriggerType.SelectedItem))
-            Lines.Insert(Endline + 3, "trigger_" + LCase(Me.Combobox_TriggerType.SelectedItem) + "_end")
+            Lines.Insert(Endline + 2, "trigger_" + RealOption)
+            Lines.Insert(Endline + 3, "trigger_" + RealOption + "_end")
             Lines.Insert(Endline + 4, "")
         End If
         For i As Integer = Lines.Count - 1 To 0 Step -1
@@ -325,5 +338,14 @@ popUp=true")
         MainTextbox.Text = String.Join(Environment.NewLine, Lines)
         Reload()
         Listbox_Outcomes_SelectedIndexChanged(sender, e)
+    End Sub
+
+    Private Sub Combobox_TriggerType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Combobox_TriggerType.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub ToolStripSplitButton1_Click(sender As Object, e As EventArgs) Handles ToolStripSplitButton1.Click
+        MsgBox("原作者：Modemsorn158
+汉化&修复bug：RedreamR", 0, "关于")
     End Sub
 End Class

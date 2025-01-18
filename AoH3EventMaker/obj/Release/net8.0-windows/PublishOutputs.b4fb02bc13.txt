@@ -1,0 +1,5 @@
+D:\fireanmeng\AoH3EC\AoH3EventMaker\bin\Release\net8.0-windows\publish\AoH3EventMaker.exe
+D:\fireanmeng\AoH3EC\AoH3EventMaker\bin\Release\net8.0-windows\publish\AoH3EventMaker.dll
+D:\fireanmeng\AoH3EC\AoH3EventMaker\bin\Release\net8.0-windows\publish\AoH3EventMaker.deps.json
+D:\fireanmeng\AoH3EC\AoH3EventMaker\bin\Release\net8.0-windows\publish\AoH3EventMaker.runtimeconfig.json
+D:\fireanmeng\AoH3EC\AoH3EventMaker\bin\Release\net8.0-windows\publish\AoH3EventMaker.pdb
